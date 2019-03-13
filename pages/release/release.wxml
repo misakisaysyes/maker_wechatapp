@@ -1,0 +1,28 @@
+<view class="container">
+
+<view class="header">
+  <image src='../../image/sun.png' style="height:75rpx;width:75rpx;margin-bottom:15px;"></image>
+  <text>于{{dateValue}}招募</text>
+</view>
+
+<view class="body">
+  <input placeholder='项目标题' class="inputbox" value="{{title}}" bindconfirm="btnadd" bindblur="titleadd"></input>
+  <input placeholder='待招人数' class="inputbox" type="number" value="{{member}}" bindconfirm="btnadd" bindblur="memberadd"></input>
+  <input placeholder='联系方式' class="inputbox" value="{{line}}" bindconfirm="btnadd"  bindblur="lineadd"></input>
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{tagindex}}" range="{{tagarray}}" class='picker'>  
+  <view class='box'>
+    <text>{{tagarray[0][tagindex[0]]}}</text>
+    <text>{{tagarray[1][tagindex[1]]}}</text>
+    <text>{{tagarray[2][tagindex[2]]}}</text>
+    </view>    
+  </picker>
+  <textarea placeholder='项目概况' class="tabox" value="{{intro}}" bindconfirm="btnadd" bindblur="introadd"></textarea>
+  <textarea placeholder='招人要求' class="tabox" value="{{requi}}" bindconfirm="btnadd" bindblur="requiadd"></textarea>
+</view>
+
+<view class="footer">
+  <button type="default" plain="true" style="margin-right:80px;" bindtap='btnadd'>提交</button>
+  <button type="default" plain="true">清空</button>
+</view>
+
+</view>

@@ -1,0 +1,51 @@
+<!--pages/recommend_c/recommend_c.wxml-->
+<view class="container">
+
+  <view class="part1">
+    {{item_c.title}}
+  </view>
+
+  <view class="part2">
+    <text>{{'发布：'+item_c.showdate}}</text>
+    <text>{{'待招：'+item_c.member+'人'}}</text>
+    <text>{{'浏览：'+item_c.browse+'次'}}</text>
+  </view>
+
+  <view class="part3">
+    <text class="part3_title">项目概况</text>
+    <text class="part3_content">{{item_c.intro}}</text>
+  </view>
+
+  <view class="part3">
+    <text class="part3_title">招人要求</text>
+    <text class="part3_content">{{item_c.requi}}</text>
+  </view>
+
+  <view class="part3">
+    <text class="part3_title">联系方式</text>
+    <text class="part3_content">{{item_c.line}}</text>
+  </view>
+
+  <view class="btn_content">
+    <!--编辑按钮-->
+    <view style="margin-right:45rpx;">
+    <button bindtap="edit" wx:if="{{editflag}}" size="mini" style="opacity:0.9;color: white; background-color: #f39c12;">编辑项目</button></view>
+    
+    <!--返回发现页面-->
+    <view style="margin-left:45rpx;">
+    <button bindtap="backtore" wx:if="{{editflag}}" size="mini" style="opacity:0.9;color: white; background-color: #778ca3;">返回发现</button></view>
+  </view>
+
+  <!--功能按钮-->
+  <view class="float" bindtap="float">{{call}}</view>
+  <view class="clear" bindtap="collect" animation="{{buttonAni}}">
+    <image src="../../image/collect.png" style="width:50%;height:50%;margin-top:9px"></image>
+  </view>
+  <view class="add" bindtap="favor" animation="{{buttonAni}}">
+    <image src="../../image/favor.png" style="width:50%;height:50%;margin-top:9px"></image>
+  </view>
+  <view class="re" bindtap="release" animation="{{buttonAni}}">
+    <image src="../../image/release.png" style="width:50%;height:50%;margin-top:7px;"></image>
+  </view>
+
+</view>

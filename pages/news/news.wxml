@@ -1,0 +1,40 @@
+<!--pages/news/news.wxml-->
+<script src="//cdn1.lncld.net/static/js/3.6.1/av-min.js"></script>
+
+<view class="container" >
+<!--条件渲染打印内容-->
+<view class="item" wx:for="{{content}}" wx:if="{{content[index].tag=='news'}}" wx:key="{{index}}" data-idx="{{index}}" bindtap='news_unfold' bindlongtap='jumpnews'>
+ <view class="item-pic">
+  <view class="item-pic-cover-left">
+   <image class="icon" src="{{content[index].show==false?'../../image/unfold.png':'../../image/fold.png'}}"></image>
+  </view>
+  <view class="item-pic-cover-right">
+    <text>{{content[index].title}}</text>
+    <view class="item-bar">
+    <text style="float:left;">{{content[index].showdate}}</text>
+    <view><image class="icon" src="../../image/browse.png"></image>{{content[index].browse}}</view>
+    </view>
+  </view>
+</view>
+   <view class="subtitle-cover {{content[index].show ? 'subtitle-show' : ''}}">
+   <view class="subtitle-box {{content[index].show ? 'subtitle-box-show' : ''}}">
+      <text>{{content[index].sub_title}}</text>
+   </view>
+   </view>
+</view>
+
+<!--功能按钮-->
+<view class="float" bindtap="float">{{call}}</view>
+<view class="clear" bindtap="neww" animation="{{buttonAni}}">
+<image  src="../../image/new.png" style="width:51%;height:51%;margin-top:7px"></image>
+</view>
+<view class="add" bindtap="hot" animation="{{buttonAni}}">
+<image  src="../../image/hot.png" style="width:50%;height:50%;margin-top:7px"></image>
+</view>
+<view class="re" bindtap="release" animation="{{buttonAni}}">
+<image src="../../image/release.png" style="width:50%;height:50%;margin-top:7px;"></image>
+</view>
+
+</view>
+
+ 

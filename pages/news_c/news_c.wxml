@@ -1,0 +1,26 @@
+<view class="container">
+    <image src="{{news_c.pic1}}" style='width:750rpx' mode='widthFix'></image>
+  <view class="part1">
+    <text class="title">{{news_c.title}}</text>
+  </view>
+  <view class="part2">
+    <text>发布:{{news_c.showdate}}</text>
+    <text>喜欢:{{news_c.favor+addfavor}}</text>
+    <text>浏览:{{news_c.browse}}</text>
+  </view>
+  <view class="part3">
+    <text class="part3_title">内   容</text>
+    <text class="part3_content">{{news_c.text}}</text>
+  </view>
+</view>
+
+<view class="float" bindtap="float">{{call}}</view>
+<view class="clear" bindtap="collect" animation="{{buttonAni}}">
+<image  src="../../image/collect.png" style="width:50%;height:50%;margin-top:9px"></image>
+</view>
+<view class="add" bindtap="favor" animation="{{buttonAni}}">
+<image  src="../../image/favor.png" style="width:50%;height:50%;margin-top:9px"></image>
+</view>
+<view class="re" bindtap="release" animation="{{buttonAni}}">
+<image src="../../image/release.png" style="width:50%;height:50%;margin-top:7px;"></image>
+</view>

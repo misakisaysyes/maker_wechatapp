@@ -1,0 +1,68 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family: 'Microsoft Yahei', Helvetica, Arial, sans-serif;
+} 
+
+/*功能按钮test*/
+.float{
+  position: fixed;
+  text-align: center;
+  top: 90%;
+  left: 85%;
+  height: 32px;
+  width: 32px;
+  line-height: 30px;
+  border-radius: 15px;
+  background-color:#f39c12;
+  color:white;
+  font-size: 30px;
+  font-weight: 900;
+  z-index: 1;
+  box-shadow: -2px 2px 3px #888888;
+}
+
+.clear {
+  position: fixed;
+  text-align: center;
+  top: 74%;
+  left: 85%;
+  height:0;
+  width:0;
+  border-radius: 20px;
+  background-color:#f39c12;
+  z-index: 1;
+  box-shadow: -2px 2px 3px #888888;
+}
+
+.add {
+  position: fixed;
+  text-align: center;
+  top: 82%;
+  left: 85%;
+  height:0;
+  width:0;
+  border-radius: 20px;
+  background-color:#f39c12;
+  z-index: 1;
+  box-shadow: -2px 2px 3px #888888;
+}
+
+.re{
+  position: fixed;
+  text-align: center;
+  top: 66%;
+  left:85%;
+  height:0;
+  width:0;
+  border-radius: 20px;
+  background-color:#f39c12;
+  z-index: 1;
+  box-shadow: -2px 2px 3px #888888;
+}

@@ -1,0 +1,13 @@
+<view class="container">
+
+<view class="item" wx:for="{{showarray}}" wx:key="{{index}}" data-idx="{{index}}" bindtap='btn'>
+  <view class="item-left">
+    <image src="{{showarray[index].pic1}}" class="pic"></image>
+  </view>
+  <view class="item-right">
+        <text style="font-size:36rpx; margin-left:10px;">【{{showarray[index].tag=='news'?'新闻':'项目'}}】{{showarray[index].title}}</text>
+  </view>
+
+</view>
+
+</view>

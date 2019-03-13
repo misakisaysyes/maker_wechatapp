@@ -1,0 +1,47 @@
+<!--pages/recommend/recommend.wxml-->
+<view class="container">
+
+<view class="item" wx:for="{{content}}" wx:if="{{content[index].tag=='proj'}}" wx:key="{{index}}" data-idx="{{index}}" bindtap='recommend_c'>
+  
+  <view class="item-title">
+    <text style="font-size:36rpx;margin-left:25rpx;margin-right:25rpx;">{{content[index].title}}</text>
+  </view>
+
+  <view class="item-up">
+    <text style="font-size:36rpx;margin-left:25rpx;margin-right:25rpx;">{{content[index].intro}}</text>
+  </view>
+
+  <view class="item-down">
+     <view class="item-down-block">
+     <image class="icon" src="../../image/person.png"></image>
+     <text style="font-size:20rpx;">{{content[index].member}}</text>
+     </view>
+
+      <view class="item-down-block">      
+      <image class="icon" src="../../image/favor.png"></image>
+      <text style="font-size:20rpx;">{{content[index].favor}}</text>
+      </view>
+
+      <view class="item-down-block">
+      <image class="icon" src="../../image/hot.png"></image>
+      <text style="font-size:20rpx;">{{content[index].browse}}</text>
+      </view>
+  
+  </view>
+
+</view>
+
+
+<!--功能按钮-->
+<view class="float" bindtap="float">{{call}}</view>
+<view class="clear" bindtap="neww" animation="{{buttonAni}}">
+<image  src="../../image/new.png" style="width:50%;height:50%;margin-top:9px"></image>
+</view>
+<view class="add" bindtap="hot" animation="{{buttonAni}}">
+<image  src="../../image/hot.png" style="width:50%;height:50%;margin-top:9px"></image>
+</view>
+<view class="re" bindtap="release" animation="{{buttonAni}}">
+<image src="../../image/release.png" style="width:50%;height:50%;margin-top:7px;"></image>
+</view>
+
+</view>

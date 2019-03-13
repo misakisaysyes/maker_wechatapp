@@ -1,0 +1,68 @@
+/* pages/recommend/recommend.wxss */
+page{
+    background-color: #fbf9fe;
+}
+
+.container {
+  height: 100%;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family: 'Microsoft Yahei', Helvetica, Arial, sans-serif;
+  font-size:30rpx;
+  color:black;
+} 
+ .item{
+width:620rpx;
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: space-between;
+margin-top:15rpx;
+margin-bottom:10rpx;
+padding:5rpx;
+background-color:white;
+border:1rpx black solid;
+border-radius:30rpx;
+}
+
+.item-title{
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top:5px;
+}
+
+.item-up{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+
+.item-down{
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+.item-down-block{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.icon{
+  height:32rpx;
+  width:32rpx;
+}
+

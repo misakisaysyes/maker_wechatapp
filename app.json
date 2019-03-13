@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/news/news",
+    "pages/news_c/news_c",
+    "pages/logs/logs",
+    "pages/recommend/recommend",
+    "pages/recommend_c/recommend_c",
+    "pages/interest/interest",
+    "pages/release/release",
+    "pages/homepage/homepage",
+    "pages/homepage_c/homepage_c"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#34495e",
+    "navigationBarTitleText": "创客空间",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#FFFFFF",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#f39c12",
+    "backgroundColor": "#f1f2f6",
+    "list": [
+      {
+        "pagePath": "pages/news/news",
+        "iconPath": "image/news1.png",
+        "selectedIconPath": "image/news2.png",
+        "text": "资讯"
+      },
+      {
+        "pagePath": "pages/recommend/recommend",
+        "iconPath": "image/discover1.png",
+        "selectedIconPath": "image/discover2.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/interest/interest",
+        "iconPath": "image/interest1.png",
+        "selectedIconPath": "image/interest2.png",
+        "text": "推荐"
+      },
+      {
+        "pagePath": "pages/homepage/homepage",
+        "iconPath": "image/homepage1.png",
+        "selectedIconPath": "image/homepage2.png",
+        "text": "个人"
+      }
+    ]
+  }
+}

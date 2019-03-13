@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="container">
+  <view  class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <view style="display:flex;flex-direction:row;align-items:flex-end;">
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <image src="{{userInfo==1?'../../image/male.png':'../../image/female.png'}}" style="height:38rpx;width:38rpx;margin-left:10rpx;"></image>
+    </view>
+  </view>
+
+  <view style="height:40rpx;"></view>
+
+  <view class="btn" bindtap="homepage_c1">
+  <image src="../../image/right.png" style="height:45rpx;width:45rpx;"></image>
+  我的创建
+  <image src="../../image/left.png" style="height:45rpx;width:45rpx;"></image>
+  </view>
+  <view style="height:40rpx;"></view>
+
+  <view class="btn" bindtap="homepage_c2">
+  <image src="../../image/right.png" style="height:45rpx;width:45rpx;"></image>
+   我的点赞
+   <image src="../../image/left.png" style="height:45rpx;width:45rpx;"></image>
+  </view>
+  <view style="height:40rpx;"></view>
+
+  <view class="btn" bindtap="homepage_c3">
+  <image src="../../image/right.png" style="height:45rpx;width:45rpx;"></image>
+  我的收藏
+  <image src="../../image/left.png" style="height:45rpx;width:45rpx;"></image>
+  </view>
+  <view style="height:40rpx;"></view>
+
+  <view class="btn" bindtap="homepage_c4">
+  <image src="../../image/right.png" style="height:45rpx;width:45rpx;"></image>
+  浏览历史
+  <image src="../../image/left.png" style="height:45rpx;width:45rpx;"></image>
+  </view>
+
+<!--功能按钮-->
+<view class="float" bindtap="float">{{call}}</view>
+<!--<view class="clear" bindtap="clear" animation="{{buttonAni}}">
+<image  src="../../image/release.png" style="width:50%;height:50%;margin-top:9px"></image>
+</view>-->
+<view class="add" bindtap="release" animation="{{buttonAni}}">
+<image  src="../../image/release.png" style="width:50%;height:50%;margin-top:9px"></image>
+</view>
+
+</view>
+

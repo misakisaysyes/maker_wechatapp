@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="title">我的{{btn}}</view>
+
+  <view class="edit">
+    <button bindtap="onChangeShowState" size="mini" style="opacity:0.9;color: white; background-color: #778ca3;">{{showView?'编辑':'结束编辑'}}</button>
+  </view>
+
+
+  <view wx:for="{{showarray}}" wx:key="{{index}}" data-idx="{{index}}" class="item" bindtap="delete_">
+    <text>{{content[showarray[index]].title}}</text>
+    <view class="date">
+      <text>{{content[showarray[index]].showdate}}</text>
+      <image src="../../image/close.png" wx:if="{{!showView}}" style="width:38rpx;height:38rpx;" ></image>
+    </view>
+  </view>
+    
+
+  <view wx:if="{{showarray.length==0}}" style="margin-top:120rpx;font-size:72rpx;">╮(๑•́ ₃•̀๑)╭</view> 
+  <view wx:if="{{showarray.length==0}}" style="margin-top:70rpx;font-size:45rpx;font-weight:600;">—— 暂无{{btn}}  ——</view>  
+</view>
+
+<view class="{{showView?'bright789_view_show':'bright789_view_hide'}}">
+  <canvas canvas-id="pieCanvas1" style="width:400rpx;"></canvas>
+</view>
+
+
+<view class="float" bindtap="float">{{call}}</view>
+<view class="add" bindtap="release" animation="{{buttonAni}}">
+  <image src="../../image/release.png" style="width:50%;height:50%;margin-top:7px;"></image>
+</view>
